@@ -1,0 +1,22 @@
+body {
+  font-family: Helvetica, Arial, Sans-Serif;
+  font-size: 16px;
+}
+#main {
+  width: 960px;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  padding: 1em;
+  border-radius: 0.5em;
+}
+#header {
+  float: right;
+  clear: both;
+}
+#user {
+  float: left;
+  margin-right: 1em;
+}
+#logout {
+  float: left;
+}

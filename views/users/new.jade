@@ -1,0 +1,13 @@
+h1 New account
+form(action='/users', method='POST')
+  p
+    label(for='name_login') Login:
+    input(type='text', name='user[login]', id='name_login')
+  p
+    label(for='name_password') Password:
+    input(type='password', name='user[password]', id='name_password')
+  p
+    label(for='name_password_confirmation') Password confirmation:
+    input(type='password', name='user[password_confirmation]', id='name_password_confirmation')
+  p
+    button(type='submit') Join

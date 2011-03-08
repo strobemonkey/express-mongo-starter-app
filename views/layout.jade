@@ -1,0 +1,26 @@
+!!! 5
+html
+  head
+    link(rel='stylesheet', href='/css/styles.css')
+    title My starter app
+  body
+    #main
+      - if (flash.warn)
+        p(style='color: red;')
+          != flash.warn
+      - if (flash.info)
+        p(style='color: blue;')
+          != flash.info
+      #header
+        - if (session.user)
+          #user= 'Logged in as ' + session.user.login
+          #logout
+            a(href='/sessions/destroy') Logout
+        - else
+          #user
+            a(href='/sessions/new') Login
+          #logout
+            a(href='/users/new') Sign up
+      h1 My starter app
+      #container!= body
+  
